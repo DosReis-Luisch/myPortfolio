@@ -1,0 +1,26 @@
+.mygrid {
+    display: grid !important;
+    grid-template-columns: 20% 40% 20% 20%; 
+    gap: 10px;
+    grid-auto-rows: minmax(400px, auto);
+}
+
+h1 .about_title {
+    grid-column: 2 / span 2 !important;
+    grid-row: 1 !important;
+}
+
+p .about_text {
+    grid-column: 1 / span 3 !important;
+    grid-row: 2 !important;
+}
+
+img .myphoto {
+    grid-column: 3 / span 2 !important;
+    grid-row: 1 / span 2 !important;
+    max-width: 100% !important;
+    max-height: 100% !important;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+}
